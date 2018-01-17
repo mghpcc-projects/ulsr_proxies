@@ -1,0 +1,12 @@
+# Example sudoers.d/ file created by cnh for testing restricted IB access shell scripts
+#
+
+# Command alias ULSR_IBPROXY to directory containing the commands that can be run
+# as sudo by users and groups in ULSR_USERS.
+# User alias ULSR_USERS to users and groups (% prefix group names) that can sudo 
+# execute the commands in the ULSR_IBPROXY directory.
+Cmnd_Alias ULSR_IBPROXY = /home/cnh/ulsr/ibproxy/
+User_Alias ULSR_USERS   = cnh, %cnh
+
+# User rules for ubuntu
+ULSR_USERS ALL=(ALL) NOPASSWD:ULSR_IBPROXY
