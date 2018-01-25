@@ -18,3 +18,9 @@ Contents
 
  ib/ulsr_ibproxy.conf - configuration file that can restrict the GUID and port
                         number pairs that ibendis.sh is allowed to work on.
+                        
+ sudoers_template/    - example of a sudoers config file that can be used to
+                        allows access to these proxies to a certain user/group
+                        without allowing access to other provileged commands. 
+                        This assumes proxies are installed in their own separate
+                        directory path - since sudoers manages access that way.
