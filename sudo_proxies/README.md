@@ -24,7 +24,7 @@ Contents
                         without allowing access to other provileged commands. 
                         This assumes proxies are installed in their own separate
                         directory path - since sudoers manages access that way.
-                        **Note** In order to use sudoers effectively you either
+                        **Note:** In order to use sudoers effectively you either
                         need to install the proxy scripts in a special directory 
                         or modify the template here so that each command path
                         is individually enumerated.
