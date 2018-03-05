@@ -33,6 +33,6 @@ Once server is installed the client can be accessed through HTTPS ``GET`` and ``
      curl -H "X-Api-Key: KKKKKKKKKKKKKKKK" https://0e5f0zcx22.execute-api.us-east-2.amazonaws.com/e1TimTesting20180304/ulsr-res-id/flexalloc_moc_20170410_rack7_8
      ```
      
-    where ```KKKKKKKKKKKKKKKK``` is the API key secret. 
+     where ```KKKKKKKKKKKKKKKK``` is the API key secret. 
      
     
