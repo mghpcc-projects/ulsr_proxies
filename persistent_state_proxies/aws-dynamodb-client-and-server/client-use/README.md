@@ -17,4 +17,6 @@ Once server is installed the client can be accessed through HTTPS ``GET`` and ``
       ```
    
       where ```KKKKKKKKKKKKKKKK``` is the API key secret. The ``hello-world`` endpoint returns information on the query received by the Lambda function. It does not interact with DynamoDB.
+      
+   * The ``put`` endpoint [code](https://github.com/mghpcc-projects/ulsr_proxies/blob/c1c804632a59950c13faad1f227a4fc028fbc151/persistent_state_proxies/aws-dynamodb-client-and-server/serverless-aws-code/nodejs-form/handler.js#L21) stores an item in the DynamoDB NoSQL database. The item is described in JSON included in the HTTP call. The key for the item is taken from the ``resid`` variable in the JSON. 
     
