@@ -27,7 +27,7 @@ Once server is installed the client can be accessed through HTTPS ``GET`` and ``
       where ```KKKKKKKKKKKKKKKK``` is the API key secret. The ``put`` endpoint stores the ``ib_splist`` contents in a DynamoDB store named according to instance URL and indexed by the key value ``resid``. Multiple calls with the same ``resid`` key value will replace the item content. Calls with a previously unknown ``resid`` key wil create a new item. 
       
       
-      * The ``get`` endpoint [code](https://github.com/mghpcc-projects/ulsr_proxies/blob/c1c804632a59950c13faad1f227a4fc028fbc151/persistent_state_proxies/aws-dynamodb-client-and-server/serverless-aws-code/nodejs-form/handler.js#L74) uses the last part of the HTTP path as an item key and returns the item content stored in the DynamoDB instance for that key. An example innvocation of the ``get`` endpoint is e.g.
+   * The ``get`` endpoint [code](https://github.com/mghpcc-projects/ulsr_proxies/blob/c1c804632a59950c13faad1f227a4fc028fbc151/persistent_state_proxies/aws-dynamodb-client-and-server/serverless-aws-code/nodejs-form/handler.js#L74) uses the last part of the HTTP path as an item key and returns the item content stored in the DynamoDB instance for that key. An example innvocation of the ``get`` endpoint is e.g.
       
          ```
          curl
