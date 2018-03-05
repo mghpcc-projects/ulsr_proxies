@@ -29,7 +29,7 @@ Once server is installed the client can be accessed through HTTPS ``GET`` and ``
       
    * The ``get`` endpoint [code](https://github.com/mghpcc-projects/ulsr_proxies/blob/c1c804632a59950c13faad1f227a4fc028fbc151/persistent_state_proxies/aws-dynamodb-client-and-server/serverless-aws-code/nodejs-form/handler.js#L74) uses the last part of the HTTP path as an item key and returns the item content stored in the DynamoDB instance for that key. An example innvocation of the ``get`` endpoint is e.g.
       
-         ```
-         curl
-         ```
+     ```
+     curl
+     ```
     
