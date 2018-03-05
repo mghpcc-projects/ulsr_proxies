@@ -25,4 +25,7 @@ Once server is installed the client can be accessed through HTTPS ``GET`` and ``
       ```
       
       where ```KKKKKKKKKKKKKKKK``` is the API key secret. The ``put`` endpoint stores the ``ib_splist`` contents in a DynamoDB store named according to instance URL and indexed by the key value ``resid``. Multiple calls with the same ``resid`` key value will replace the item content. Calls with a previously unknown ``resid`` key wil create a new item. 
+      
+      
+      * The ``get`` endpoint [code]()
     
