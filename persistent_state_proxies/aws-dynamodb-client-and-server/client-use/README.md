@@ -37,6 +37,13 @@ Once server is installed the client can be accessed through HTTPS ``GET`` and ``
      
 ### Example
 
+> ``get``
+>
+>>  ```
+>>   curl -H "X-Api-Key: KKKKKKKKKKKKKKKK" https://0e5f0zcx22.execute-api.us-east-2.amazonaws.com/e1TimTesting20180304/hello-world
+>>
+>
+
 > ``put`` 
 >
 >>  request
@@ -48,3 +55,5 @@ Once server is installed the client can be accessed through HTTPS ``GET`` and ``
 >>  ```
 >>  {"func":"putUlsrResInfo","thbody":{"resid":"flexalloc_moc_20170410_rack7_8","ib_splist":[{"0xE108ABG":"9"},{"0xE108ABG":"12"},{"0xE108ABF":"3"}]}}
 >>  ```    
+>
+
