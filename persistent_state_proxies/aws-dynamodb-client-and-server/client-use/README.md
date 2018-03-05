@@ -6,7 +6,9 @@ Once server is installed the client can be accessed through HTTPS ``GET`` and ``
    
    3. ``get`` e.g. https://0e5f0zcx22.execute-api.us-east-2.amazonaws.com/e1TimTesting20180304/ulsr-res-id ``/RESERVATION_ID``
    
-   Accessing any of the interfaces requires and API key that is passed in the x-api-key header field of the HTTP request.
+   Accessing any of the endpoints requires and API key that is passed in the x-api-key header field of the HTTP request.
+   
+   ==End points==
    
    The ``hello-world`` interface provides a simple test of the Lambda function. It can be invoked by e.g.
    
