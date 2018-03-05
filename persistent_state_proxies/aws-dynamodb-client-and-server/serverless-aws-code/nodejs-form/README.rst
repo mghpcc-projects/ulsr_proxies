@@ -8,4 +8,4 @@ where ``XXXX`` is a veraion and instance id string that can be used to support m
 
 Instructions on configuring the serverless framework can be found at the project [web site](https://serverless.com). 
 
-When initially setting up a serverless environment for the code AWS IAM credentials will need to be specified using ``sls configure``.
+When initially setting up a serverless environment for the code AWS IAM credentials will need to be specified using ``sls config credentials --stage cnhtesting --provider aws --key KKKKK --secret SSSSS``.
