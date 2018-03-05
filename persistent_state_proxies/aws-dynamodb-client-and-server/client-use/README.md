@@ -37,14 +37,14 @@ Once server is installed the client can be accessed through HTTPS ``GET`` and ``
      
 ### Example
 
-``put`` 
-
-  request
-
-  ```
+> ``put`` 
+>
+>>  request
+>>  ```
   curl -H "Content-Type: application/json" -H "X-Api-Key: KKKKKKKKKKKKKKKK" -d '{"resid":"flexalloc_moc_20170410_rack7_8","ib_splist":[{"0xE108ABG":"9"},{"0xE108ABG":"12"},{"0xE108ABF":"3"}]}' -X POST https://0e5f0zcx22.execute-api.us-east-2.amazonaws.com/e1TimTesting20180304/ulsr-res-id
-  ```
-  response
-  ```
+>>  ```
+>  
+>>  response
+>>  ```
   {"func":"putUlsrResInfo","thbody":{"resid":"flexalloc_moc_20170410_rack7_8","ib_splist":[{"0xE108ABG":"9"},{"0xE108ABG":"12"},{"0xE108ABF":"3"}]}}
-  ```    
+>>  ```    
