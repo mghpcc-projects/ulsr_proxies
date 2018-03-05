@@ -10,7 +10,7 @@ Once server is installed the client can be accessed through HTTPS ``GET`` and ``
    
    The ``hello-world`` interface provides a simple test of the Lambda function. It can be invoked by e.g.
    
-   ``
+   ```
    curl -H "X-Api-Key: KKKKKKKKKKKKKKKK" https://0e5f0zcx22.execute-api.us-east-2.amazonaws.com/e1TimTesting20180304/hello-world
-   ``
+   ```
     
