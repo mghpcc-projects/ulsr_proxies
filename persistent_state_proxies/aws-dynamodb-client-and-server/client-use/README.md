@@ -37,7 +37,7 @@ Once server is installed the client can be accessed through HTTPS ``GET`` and ``
      
 ### Example
 
-> ``hello-world``
+``hello-world``
 >
 >>  request
 >>  ```
@@ -49,7 +49,7 @@ Once server is installed the client can be accessed through HTTPS ``GET`` and ``
 >> ```
 >
 
-> ``put`` 
+``put`` 
 >
 >>  request
 >>  ```
