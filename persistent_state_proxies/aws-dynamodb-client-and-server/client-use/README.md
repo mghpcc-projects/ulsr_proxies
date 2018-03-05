@@ -8,7 +8,7 @@ Once server is installed the client can be accessed through HTTPS ``GET`` and ``
    
    Accessing any of the endpoints requires and API key that is passed in the x-api-key header field of the HTTP request.
    
-   ==End points==
+   ##End points##
    
    The ``hello-world`` interface provides a simple test of the Lambda function. It can be invoked by e.g.
    
