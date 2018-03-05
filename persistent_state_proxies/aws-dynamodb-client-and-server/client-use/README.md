@@ -35,7 +35,7 @@ Once server is installed the client can be accessed through HTTPS ``GET`` and ``
      
      where ```KKKKKKKKKKKKKKKK``` is the API key secret. If the reservation id in the path name is not a valid key in the DynamoDB store then nothing is returned, otherwise JSON code for the item columns is returned. 
      
-### Example
+### Examples
 
 ``hello-world``
 >
@@ -48,6 +48,8 @@ Once server is installed the client can be accessed through HTTPS ``GET`` and ``
 >> ```
 >> ```
 >
+
+
 
 ``put`` 
 >
