@@ -10,7 +10,7 @@ Once server is installed the client can be accessed through HTTPS ``GET`` and ``
    
    ### Endpoints
    
-   * The ``hello-world`` endpoint provides a simple test of the Lambda function. It can be invoked by e.g.
+   * The ``hello-world`` endpoint (https://github.com/mghpcc-projects/ulsr_proxies/blob/c1c804632a59950c13faad1f227a4fc028fbc151/persistent_state_proxies/aws-dynamodb-client-and-server/serverless-aws-code/nodejs-form/handler.js#L6)provides a simple test of the Lambda function. It can be invoked by e.g.
    
       ```
       curl -H "X-Api-Key: KKKKKKKKKKKKKKKK" https://0e5f0zcx22.execute-api.us-east-2.amazonaws.com/e1TimTesting20180304/hello-world
