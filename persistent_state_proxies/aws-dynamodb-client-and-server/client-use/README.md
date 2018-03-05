@@ -1,4 +1,4 @@
-Once server is installed the client can be accessed through HTTPS ``GET`` and ``POST`` requests. Each instance of the server will have a different URL. The URL provides three functions, each with a different URL
+Once server is installed the client can be accessed through HTTPS ``GET`` and ``POST`` requests. Each instance of the server will have a different URL. The URL provides three endpoints, each with a different URL
 
    1. ``hello-world`` e.g. https://0e5f0zcx22.execute-api.us-east-2.amazonaws.com/e1TimTesting20180304/hello-world
    
@@ -14,5 +14,5 @@ Once server is installed the client can be accessed through HTTPS ``GET`` and ``
    curl -H "X-Api-Key: KKKKKKKKKKKKKKKK" https://0e5f0zcx22.execute-api.us-east-2.amazonaws.com/e1TimTesting20180304/hello-world
    ```
    
-   where ```KKKKKKKKKKKKKKKK``` is the API key secret. 
+   where ```KKKKKKKKKKKKKKKK``` is the API key secret. The ``hello-world`` endpoint returns information on the query received by the Lambda function. It does not interact with DynamoDB.
     
