@@ -70,11 +70,12 @@ Once server is installed the client can be accessed through HTTPS ``GET`` and ``
 >
 >> request
 >> ```
->> curl -H "X-Api-Key: EMeAgjazNN1r5CMiM891Tpw58T2ibor53XVqMwIi" https://0e5f0zcx22.execute-api.us-east-2.amazonaws.com/e1TimTesting20180304/ulsr-res-id/flexalloc_moc_20170410_rack7_8
+>> curl -H "X-Api-Key: KKKKKKKKKKKKKKKK" https://0e5f0zcx22.execute-api.us-east-2.amazonaws.com/e1TimTesting20180304/ulsr-res-id/flexalloc_moc_20170410_rack7_8
 >> ```
 >
 >> response
 >> ```
+>> {"resId":"flexalloc_moc_20170410_rack7_8","ibSplist":"[{\"0xE108ABG\":\"9\"},{\"0xE108ABG\":\"12\"},{\"0xE108ABF\":\"3\"}]","foo":"bar4"}
 >> ```
 >
 
