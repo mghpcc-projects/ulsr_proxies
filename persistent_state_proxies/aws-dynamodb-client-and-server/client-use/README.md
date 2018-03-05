@@ -46,6 +46,7 @@ Once server is installed the client can be accessed through HTTPS ``GET`` and ``
 >
 >> response
 >> ```
+>> {"message":"Go Serverless v1.0! Your function executed successfully!","input":{"resource":"/hello-world","path":"/hello-world","httpMethod":"GET","headers":{"Accept":"*/*","CloudFront-Forwarded-Proto":"https","CloudFront-Is-Desktop-Viewer":"true","CloudFront-Is-Mobile-Viewer":"false","CloudFront-Is-SmartTV-Viewer":"false","CloudFront-Is-Tablet-Viewer":"false","CloudFront-Viewer-Country":"US","Host":"0e5f0zcx22.execute-api.us-east-2.amazonaws.com","userAgent":"curl/7.47.0","accountId":null,"caller":null,"accessKey":null,"cognitoAuthenticationProvider":null,"user":null},"resourcePath":"/hello-world","httpMethod":"GET"},"body":null,"isBase64Encoded":false}}
 >> ```
 >
 
