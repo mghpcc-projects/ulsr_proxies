@@ -7,7 +7,7 @@
 # 0xXXXXXXXXXXXXXXXX NN disable
 #
 # where XXXXXXXXXXXXXXXX is a hexadecimal GUID
-# and NN is a decimale port number.
+# and NN is a decimal port number.
 #
 # These are used to execute a command of the form
 #
@@ -78,7 +78,7 @@ function check_allowed() {
  if [ ${nany} -eq 1 ]; then
   return 0
  fi
- nmatch=`${grep_cmd} -v '^ *#' "${proxy_conf_file}" | ${grep_cmd} ' *'"${1}"' *'"${2}" | ${wc_cmd} -l`
+ nmatch=`${grep_cmd} -v '^ *#' "${proxy_conf_file}" | ${grep_cmd} ' *'"${1}"' *'' [0-9]*'"${2}" | ${wc_cmd} -l`
  if [ ${nmatch} -eq 1 ]; then
   return 0
  fi
@@ -90,12 +90,12 @@ function get_settings() {
  dname=$(cd `$dirname_cmd "$cmd_name"` && pwd)
  owper=`$stat_cmd -c '%A' ${dname} | $awk_cmd '{print $1}' | $sed_cmd s'/........\(.\)./\1/'`
  if [ "$owper" != "-" ]; then
-  echo -E "# Script directory \"${dname}\" write permisissions too open."
+  echo -E "# Script directory \"${dname}\" write permissions too open."
   return 1
  fi
  owper=`$stat_cmd -c '%A' ${cmd_name} | $awk_cmd '{print $1}' | $sed_cmd s'/........\(.\)./\1/'`
  if [ "$owper" != "-" ]; then
-  echo -E "# Script file \"${cmd_name}\" write permisissions too open."
+  echo -E "# Script file \"${cmd_name}\" write permissions too open."
   return 1
  fi
  proxy_conf_file="${dname}""/""${conf_file}"
@@ -105,7 +105,7 @@ function get_settings() {
  fi
  owper=`$stat_cmd -c '%A' ${proxy_conf_file} | $awk_cmd '{print $1}' | $sed_cmd s'/........\(.\)./\1/'`
  if [ "$owper" != "-" ]; then
-  echo -E "# Script file \"${proxy_conf_file}\" write permisissions too open."
+  echo -E "# Script file \"${proxy_conf_file}\" write permissions too open."
   return 1
  fi
  if [ ! -f ${ibpstate_cmd_path} ]; then
