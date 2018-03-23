@@ -49,7 +49,7 @@ wc_cmd="/usr/bin/wc"
 function parseline() {
  local line;
  line=( ${1} ); nw=${#line[@]};
- if [ ${nw} == 3 ]; then
+ if [ ${nw} == 2 ] || [ ${nw} == 3 ]; then
   ifld=0
   fld="${line[${ifld}]}"
   printf -v gvar '0x%14.14x' "${fld}" 2>/dev/null || { echo -E "# \"${fld}\"" "is not a valid GUID format."; exit 1; }
